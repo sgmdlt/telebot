@@ -1,6 +1,6 @@
-import telebot
-import random
 import os
+import random
+import telebot
 
 
 token = os.getenv('TOKEN')
@@ -35,4 +35,9 @@ def random_card():
   return value, suit
 
 
-bot.infinity_polling()
+def main():
+  bot.infinity_polling()
+
+
+if __name__ == "__main__":
+  main()
